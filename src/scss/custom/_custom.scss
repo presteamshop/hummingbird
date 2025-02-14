@@ -4,8 +4,23 @@
 // Modules
 @import "modules";
 
+$footer-background-color: black;
+
 // Layout
 @import "layout";
 
 // Pages
 @import "pages";
+
+// overrides
+.footer {
+    &__block {
+        &__content-list {
+            a {
+                &.logout {
+                    color: $secondary !important;
+                }
+            }
+        }
+    }
+}

@@ -47,12 +47,12 @@
               {l s='Orders' d='Shop.Theme.Customeraccount'}
             </a>
           {/if}
-          {if !$configuration.is_catalog}
+          {*if !$configuration.is_catalog}
             <a href="{$urls.pages.order_slip}" title="{l s='Credit slips' d='Shop.Theme.Customeraccount'}" class="dropdown-item" rel="nofollow">
               <i class="material-icons me-2" aria-hidden="true">&#xE8B0;</i>
               {l s='Credit slips' d='Shop.Theme.Customeraccount'}
             </a>
-          {/if}
+          {/if*}
           {if $configuration.voucher_enabled && !$configuration.is_catalog}
             <a href="{$urls.pages.discount}" title="{l s='Vouchers' d='Shop.Theme.Customeraccount'}" class="dropdown-item" rel="nofollow">
             <i class="material-icons me-2" aria-hidden="true">&#xE54E;</i>

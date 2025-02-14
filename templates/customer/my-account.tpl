@@ -44,14 +44,14 @@
       </a>
     {/if}
 
-    {if !$configuration.is_catalog}
+    {*if !$configuration.is_catalog}
       <a class="{$componentName}__link col-md-6 col-lg-4" id="order-slips-link" href="{$urls.pages.order_slip}">
         <span class="link-item">
           <i class="material-icons" aria-hidden="true">&#xE8B0;</i>
           {l s='Credit slips' d='Shop.Theme.Customeraccount'}
         </span>
       </a>
-    {/if}
+    {/if*}
 
     {if $configuration.voucher_enabled && !$configuration.is_catalog}
       <a class="{$componentName}__link col-md-6 col-lg-4" id="discounts-link" href="{$urls.pages.discount}">

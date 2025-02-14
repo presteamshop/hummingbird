@@ -40,14 +40,14 @@
       </a>
     {/if}
 
-    {if !$configuration.is_catalog}
+    {*if !$configuration.is_catalog}
       <a class="{$componentName}__line{if $urls.current_url === $urls.pages.order_slip} active{/if}" id="order-slips__link" href="{$urls.pages.order_slip}">
         <span class="link-item">
           <i class="material-icons" aria-hidden="true">&#xE8B0;</i>
           {l s='Credit slips' d='Shop.Theme.Customeraccount'}
         </span>
       </a>
-    {/if}
+    {/if*}
 
     {if $configuration.voucher_enabled && !$configuration.is_catalog}
       <a class="{$componentName}__line{if $urls.current_url === $urls.pages.discount} active{/if}" id="discounts__link" href="{$urls.pages.discount}">
