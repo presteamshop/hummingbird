@@ -20,7 +20,7 @@
             {if $product.cover}
               <picture>
                 {if isset($product.cover.bySize.default_xs.sources.avif)}
-                  <source 
+                  <source
                     srcset="
                       {$product.cover.bySize.default_xs.sources.avif},
                       {$product.cover.bySize.default_m.sources.avif} 2x",
@@ -29,7 +29,7 @@
                 {/if}
 
                 {if isset($product.cover.bySize.default_xs.sources.webp)}
-                  <source 
+                  <source
                     srcset="
                       {$product.cover.bySize.default_xs.sources.webp},
                       {$product.cover.bySize.default_m.sources.webp} 2x"
@@ -52,7 +52,7 @@
             {else}
               <picture>
                 {if isset($urls.no_picture_image.bySize.default_xs.sources.avif)}
-                  <source 
+                  <source
                     srcset="
                       {$urls.no_picture_image.bySize.default_xs.sources.avif},
                       {$urls.no_picture_image.bySize.default_m.sources.avif} 2x"
@@ -61,7 +61,7 @@
                 {/if}
 
                 {if isset($urls.no_picture_image.bySize.default_xs.sources.webp)}
-                  <source 
+                  <source
                     srcset="
                       {$urls.no_picture_image.bySize.default_xs.sources.webp},
                       {$urls.no_picture_image.bySize.default_m.sources.webp} 2x"
@@ -184,7 +184,7 @@
                   </a>
                 </p>
               {/if}
-              
+
               {if $product.customizations}
                 {foreach $product.customizations as $customization}
                   <div class="customization">
@@ -222,7 +222,7 @@
             <div class="order__item__line row">
               <span class="order__item__label col">{l s='Total price' d='Shop.Theme.Catalog'}</span>
               <span class="order__item__value col text-end">
-                {$product.price}
+                {$product.total}
               </span>
             </div>
           </div>

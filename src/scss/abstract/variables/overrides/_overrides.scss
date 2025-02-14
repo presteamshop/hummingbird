@@ -1,4 +1,10 @@
 // Bootstrap variables, maps overrides
+// $primary: black;
+
+// Define tus colores personalizados $primary: #ff5733;
+// Cambia el color primary $secondary: #6c757d; $success: #28a745; $info: #17a2b8; $warning: #ffc107; $danger: #dc3545; $light: #f8f9fa; $dark: #343a40;
+// Sobrescribe el mapa de colores de Bootstrap $theme-colors: ( "primary": $primary, "secondary": $secondary, "success": $success, "info": $info, "warning": $warning, "danger": $danger, "light": $light, "dark": $dark );
+// $theme-colors: ( "primary": $primary, "secondary": $secondary, "success": $success, "info": $info, "warning": $warning, "danger": $danger, "light": $light, "dark": $dark );
 
 // Breakpoints
 $grid-breakpoints: (
